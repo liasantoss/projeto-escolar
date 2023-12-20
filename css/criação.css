@@ -1,0 +1,277 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+
+.conteiner {
+    width: 80%;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+.titulo {
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 70px;
+}
+
+.texto-content {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.imagem {
+    flex: 1;
+    margin-right: 20px;
+    overflow: hidden;
+    border-radius: 10px ;
+    border: 2px solid #000000;
+    background: #8b6e6e;
+}
+
+.imagem img {
+    width: 100%;
+    transition: transform 0.3s ease;
+}
+
+.imagem:hover img {
+    transform: scale(1.1);
+}
+
+.content {
+    flex: 1;
+    margin-left: 20px;
+}
+
+.content p {
+    font-size: 19px;
+    line-height: 1.6;
+}
+
+.content h2 {
+    font-size: 20px;
+    line-height: 1.7;
+}
+
+.botao {
+    display: inline-block;
+    background-color: rgb(0, 0, 0);
+    color: aliceblue;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 20px;
+    transition: 0.4s;
+}
+
+.botao:hover {
+    background: transparent;
+    color: black;
+    border: 2px solid mediumpurple;
+    transform: scale(1.0) translateY(8px);
+    transition: .4s;
+}
+
+
+
+.perguntas {
+    width: 99%;
+    margin-top: auto;
+    text-align: center;
+    padding-top: 100px;
+    padding: 80px;
+}
+
+.perguntas h1 {
+    padding: 20px;
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.perguntas h3 {
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.perguntas p {
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+
+}
+
+.caixas {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.pergun-col {
+    flex-basis: 31%;
+    background: #fcf3fff3;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 17px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+.pergun-col h3 {
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.pergun-col:hover {
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+.iniciar {
+    width: 100%;
+    height: 290px;
+    background: rgb(222, 179, 235);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.iniciar p {
+    color: #000000;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.iniciar .botao {
+    background-color: rgb(0, 0, 0);
+    color: aliceblue;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 20px;
+    transition: 0.4s;
+}
+
+.iniciar .botao:hover {
+    background-color: transparent;
+    border: 2px solid mediumpurple;
+    cursor: pointer;
+}
+
+.contacts {
+    background: #3d0061;
+}
+
+ul li {
+    display: block;
+}
+
+.main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer {
+    padding: 66px;
+
+}
+
+.col {
+    width: 25%;
+}
+
+.col h4 {
+    font-size: 30px;
+    color: #000000;
+    margin-bottom: 29px;
+    position: relative;
+
+}
+
+.col h4::before {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 50px;
+    left: 0;
+    bottom: -8px;
+    background: #8006cc;
+}
+
+.col ul li:not(last-child) {
+    margin-bottom: 15px;
+}
+
+.col ul li a {
+    color: #ffffff;
+    font-size: 20px;
+    display: block;
+    text-transform: capitalize;
+    transition: .4s;
+}
+
+.col ul li a:hover {
+    color: rgb(132, 0, 255);
+    transform: translateX(-12px);
+}
+
+.col .social {
+    width: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.col .social a {
+    height: 40px;
+    width: 40px;
+    background: #892dbe;
+    color: #ffefe8;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    transition: .4s;
+}
+
+.col .social a:hover {
+    transform: scale(1.2);
+    background: #d283ff;
+}
+
+
+@media screen and (max-width: 768px) {
+    .texto-content {
+        flex-direction: column;
+    }
+
+    .imagem,
+    .content {
+        margin: 0;
+        margin-bottom: 25px;
+    }
+
+    .titulo {
+        font-size: 38px;
+        margin-bottom: 50px;
+    }
+
+    .caixas {
+        flex-direction: column;
+    }
+
+    .col {
+        width: 30%;
+        margin-top: 10px;
+    }
+}

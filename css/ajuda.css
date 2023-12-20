@@ -1,0 +1,28 @@
+* {
+
+    margin: 0;
+
+    padding: 0;
+
+    box-sizing: border-box;
+
+    text-decoration: none;
+
+    font-family: 'inter', sans-serif;
+
+}
+
+body {
+
+    background: rgb(0, 177, 147);
+}
+
+h1 {
+
+    margin: 350px;
+
+    font-size: 100px;
+    
+    text-decoration: underline;
+
+}
